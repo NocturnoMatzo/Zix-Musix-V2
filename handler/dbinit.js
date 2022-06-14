@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 
 const sequelize = new Sequelize('database', 'username', 'password', {
-	host: 'https://github.com/NocturnoMatzo/database/blob/51a0da7489be3999f7fd2a6bab09a1767a760b17/database.sqlite',
+	host: 'localhost',
 	dialect: 'sqlite',
 	logging: false,
 	storage: 'database.sqlite',
