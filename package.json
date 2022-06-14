@@ -1,0 +1,36 @@
+{
+  "name": "zix-musix-v2",
+  "version": "2.0.0",
+  "description": "zix est un bot musicale",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@NocturnoMatzo#9713",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/opus": "^0.5.3",
+    "@discordjs/rest": "^0.4.1",
+    "@discordjs/voice": "^0.9.0",
+    "@distube/spotify": "^1.2.1",
+    "@distube/yt-dlp": "^1.0.2",
+    "@distube/ytdl-core": "^4.11.3",
+    "ascii-table": "^0.0.9",
+    "chalk": "^4.0.0",
+    "discord-modals": "^1.3.7",
+    "discord.js": "^13.8.0",
+    "discordjs-button-pagination": "^3.0.1",
+    "distube": "^3.3.4",
+    "dotenv-flow": "^3.2.0",
+    "ffmpeg-static": "^4.4.1",
+    "fs": "^0.0.1-security",
+    "glob": "^8.0.3",
+    "libsodium-wrappers": "^0.7.10",
+    "mongoose": "^6.3.4",
+    "node.js": "^0.0.1-security",
+    "sequelize": "^6.20.1"
+  },
+  "devDependencies": {
+    "sqlite3": "^5.0.8"
+  }
+}
