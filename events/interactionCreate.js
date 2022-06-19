@@ -23,12 +23,6 @@ client.on("interactionCreate", async (interaction) => {
         }
     })
 
-
-    if (interaction.channel.isVoice()) return interaction.reply({
-        content: 'Les commandes slash ne sont, pour l\'instant, non disponible dans les salons textuelles vocaux',
-        ephemeral: true
-    })
-
     let excmd = ['info']
 
     if (interaction.isCommand()) {
