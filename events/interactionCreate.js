@@ -22,10 +22,6 @@ client.on("interactionCreate", async (interaction) => {
         }
     })
 
-    if (channel.isVoice()) {
-        interaction.reply({content : 'VoiceChat !' })
-    }
-    
     let excmd = ['info']
 
     if (interaction.isCommand()) {
