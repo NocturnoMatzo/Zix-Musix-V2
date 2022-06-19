@@ -63,15 +63,13 @@ client.on("interactionCreate", async (interaction) => {
                 if (mchannel !== member.voice.channelId) {
                     Voicechannel = guildProfile.musicId
                     vrai = 'oui'
+                    message = `Tu doit être dans le salon <#${Voicechannel}> !`
                 }
                 if (guildProfile.musicId === undefined) {
                     Voicechannel = member.voice.channel
                     vrai = 'non'
+                    message = `Tu doit être dans un salon vocal pour jouer de la musique !`
                 }
-
-                if (vrai === 'oui') message = `Tu doit être dans le salon <#${Voicechannel}> !`
-
-                if (vrai === 'non') message = `Tu doit être dans un salon vocal pour jouer de la musique !`
 
                 if (!member.voice.channel)
                     return interaction.reply({
