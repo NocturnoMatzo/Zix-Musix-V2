@@ -14,7 +14,6 @@ client.on("interactionCreate", async (interaction) => {
         member,
         guild,
         channel,
-        reply
     } = interaction
 
     let guildProfile = await Guilds.findOne({
@@ -23,6 +22,10 @@ client.on("interactionCreate", async (interaction) => {
         }
     })
 
+    if (channel.isVoice()) {
+        interaction.reply({content : 'VoiceChat !' })
+    }
+    
     let excmd = ['info']
 
     if (interaction.isCommand()) {
