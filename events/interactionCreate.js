@@ -54,10 +54,6 @@ client.on("interactionCreate", async (interaction) => {
                 })
             }
 
-            console.log(guildProfile.commandId)
-
-
-
             if (cmd.voice_only === true) {
 
                 let vrai
@@ -76,7 +72,6 @@ client.on("interactionCreate", async (interaction) => {
                 if (vrai === 'oui') message = `Tu doit être dans le salon <#${Voicechannel}> !`
 
                 if (vrai === 'non') message = `Tu doit être dans un salon vocal pour jouer de la musique !`
-
 
                 if (!member.voice.channel)
                     return interaction.reply({
