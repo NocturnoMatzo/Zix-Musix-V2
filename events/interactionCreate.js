@@ -3,7 +3,6 @@ const {
     Guilds
 } = require('../handler/dbObjects')
 const distube = require('../Client/Distube')
-const rateLimiter = require('../index')
 const {
     Permissions
 } = require('discord.js')
@@ -56,9 +55,9 @@ client.on("interactionCreate", async (interaction) => {
             }
 
             if (cmd.limit === true) {
-                let limited = rateLimiter.take(interaction.member.id)
+                let limited = client.rateLimiter.take(interaction.member.id)
                 if(limited) {
-                    return interaction.reply({ content : 'attend quelque secondes avant de réutilisé cette commande', ephemeral : true})
+                    return interaction.reply({ content : 'Veuillez attendre quelque secondes avant de réutilisé cette commande', ephemeral : true})
                 }
             }
 
