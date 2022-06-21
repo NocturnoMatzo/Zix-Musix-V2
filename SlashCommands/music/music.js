@@ -12,6 +12,7 @@ module.exports = {
     name: "music",
     description: "Commandes musicales",
     type: 'CHAT_INPUT',
+    limit: true,
     voice_only: true,
     deletemessage: true,
     options: [{

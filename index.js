@@ -1,5 +1,9 @@
 const { Client, Collection } = require("discord.js");
 const discordModals = require('discord-modals');
+const { RateLimiter } = require('discord.js-rate-limiter');
+
+const rateLimiter = new RateLimiter(1, 5000);
+module.exports = rateLimiter;
 
 const client = new Client({
     intents: 32767,
