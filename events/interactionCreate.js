@@ -57,7 +57,7 @@ client.on("interactionCreate", async (interaction) => {
             if (cmd.limit === true) {
                 let limited = client.rateLimiter.take(interaction.member.id)
                 if(limited) {
-                    return interaction.reply({ content : 'Veuillez attendre quelque secondes avant de réutilisé cette commande', ephemeral : true})
+                    return interaction.reply({ content : 'Veuillez attendre quelque secondes avant de réutilisé cette commande ', ephemeral : true})
                 }
             }
 
